@@ -63,9 +63,9 @@ VALUES
 # Categorize all companies in the Retail industry as 'generous', 'moderate', or 'minimal' based on the number of paid time off days offered.
 SELECT company_name,
 CASE
-	WHEN paid_time_off_days >= 20 THEN 'generous'
-  WHEN paid_time_off_days >= 15 THEN 'moderate'
-  ELSE 'minimal'
+WHEN paid_time_off_days >= 20 THEN 'generous'
+WHEN paid_time_off_days >= 15 THEN 'moderate'
+ELSE 'minimal'
 END AS time_off_category
 FROM fortune_companies
 WHERE industry = 'Retail'
